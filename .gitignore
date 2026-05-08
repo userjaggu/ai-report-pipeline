@@ -1,0 +1,15 @@
+# Environment Variables
+.env
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Output Files
+report.pdf
+*.log

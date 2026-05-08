@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Performance Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .commentary { margin-top: 20px; line-height: 1.6; }
+        .commentary p { margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; color: #333; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .footer { margin-top: 40px; font-size: 0.8em; color: #7f8c8d; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Daily Performance Report</h1>
+    <p><strong>Date:</strong> {{ date }}</p>
+
+    <div class="commentary">
+        <h2>AI Performance Commentary</h2>
+        {{ commentary | safe }}
+    </div>
+
+    <h2>Data Summary</h2>
+    {{ data_table | safe }}
+
+    <div class="footer">
+        <p>Automated AI Report Generation & Delivery Pipeline</p>
+    </div>
+</body>
+</html>
